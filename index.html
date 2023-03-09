@@ -22,15 +22,21 @@
           Nós vamos lhe informar se o seu palpite foi maior ou menor do
           que o número selecionado.
         </p>
-        <form class="formulario">
-          <label for="campoPalpite">Entre com um palpite: </label>
+        <form class="form">
+          <label for="turnField">Entre com um palpite: </label>
           <input type="number" min="1" max="100">
-          <input type="button" value="Adivinhe!">
+          <input type="button" value="Enviar palpite" class="sendTurn">
         </form>
+        <div>
+          <p class="turns"></p>
+          <p class="latestResult"></p>
+          <p class="highOrLow"></p>
+        </div>
       </div>
     </div>
   </div>
 
+  <script src="index.js"></script>
 
 </body>
 
