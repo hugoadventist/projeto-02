@@ -24,10 +24,13 @@
         </p>
         <form class="form">
           <label for="turnField">Entre com um palpite: </label>
-          <input type="number" min="1" max="100">
+          <input type="number" id="turnField" class="turnField" min="1" max="100">
+          <div class="popup" onclick="checkNumber()">
+            <span class="popuptext" id="myPopup">Entre com um número válido!</span>
+          </div>
           <input type="button" value="Enviar palpite" class="sendTurn">
         </form>
-        <div>
+        <div class="ResultParas">
           <p class="turns"></p>
           <p class="latestResult"></p>
           <p class="highOrLow"></p>
